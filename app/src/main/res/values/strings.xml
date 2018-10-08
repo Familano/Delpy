@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Delpy</string>
+
+    <!-- Kuisioner -->
+    <!-- 1 -->
+    <string name="quest1">Kesedihan</string>
+    <string name="answer0_q1">Saya tidak merasa sedih</string>
+    <string name="answer1_q1">Saya sering merasa sedih</string>
+    <string name="answer2_q1">Saya sedih sepanjang waktu</string>
+    <string name="answer3_q1">Saya merasa sangat sedih atau tak gembira, sampai saya tak dapat menahannya</string>
+    <string name="page1">1/21</string>
+    <!-- 2 -->
+    <string name="quest2">Pesimistik</string>
+    <string name="answer0_q2">Saya yakin dengan masa depan saya</string>
+    <string name="answer1_q2">Saya merasa takut dengan masa depan saya daripada biasanya</string>
+    <string name="answer2_q2">Saya tidak berharap segalanya menjadi lebih baik untuk saya
+</string>
+    <string name="answer3_q2">Saya merasa putus asa dengan masa depan saya dan keadaan hanya menjadi semakin
+memburuk</string>
+    <string name="page2">2/21</string>
+    <!-- 3 -->
+    <string name="quest3">Kegagalan masa lalu</string>
+    <string name="answer0_q3">Saya tidak merasa saya gagal</string>
+    <string name="answer1_q3">Saya telah lebih gagal dari sebelumnya</string>
+    <string name="answer2_q3">Saat saya menoleh ke belakang, saya melihat banyak kegagalan</string>
+    <string name="answer3_q3">Saya merasa orang yang sepenuhnya penuh akan kegagalan</string>
+    <string name="page3">3/21</string>
+    <!-- 4 -->
+    <string name="quest4">Kehilangan kesenangan</string>
+    <string name="answer0_q4">Saya tidak merasa bersalah sama sekali</string>
+    <string name="answer1_q4">Kadang-kadang saya merasa bersalah
+</string>
+    <string name="answer2_q4">Saya sering merasa bersalah</string>
+    <string name="answer3_q4">Saya selalu merasa bersalah</string>
+    <string name="page4">4/21</string>
+    <!-- 5 -->
+    <string name="quest5">Perasaan berasalah</string>
+    <string name="answer0_q5">Saya sama sekali tidak merasa bersalah</string>
+    <string name="answer1_q5">Saya merasa bersalah pada kebanyakan hal yang saya lakukan atau seharusnya saya lakukan</string>
+    <string name="answer2_q5">Saya merasa bersalah pada kebanyakan waktu
+</string>
+    <string name="answer3_q5">Saya merasa bersalah setiap waktu</string>
+    <string name="page5">5/21</string>
+    <!-- 6 -->
+    <string name="quest6">Perasaan merasa dihukum</string>
+    <string name="answer0_q6">Saya merasa tidak seperti dihukum</string>
+    <string name="answer1_q6">Saya merasa mungkin saya dihukum</string>
+    <string name="answer2_q6">Saya mengharapkan untuk dihukum</string>
+    <string name="answer3_q6">Saya merasa sedang dihukum</string>
+    <string name="page6">6/21</string>
+    <!-- 7 -->
+    <string name="quest7">Benci diri sendiri</string>
+    <string name="answer0_q7">Saya maerasa sama dengan diri saya selama ini</string>
+    <string name="answer1_q7">Saya kehilangan kepercayaan terhadap diri saya</string>
+    <string name="answer2_q7">Saya kecewa dengan diri saya</string>
+    <string name="answer3_q7">Saya tidak menyukai diri saya</string>
+    <string name="page7">7/21</string>
+    <!-- 8 -->
+    <string name="quest8">Pengkritikan terhadap diri sendiri</string>
+    <string name="answer0_q8">Saya tidak mengkritik atau menyalahkan diri saya lebih dari seperti biasanya</string>
+    <string name="answer1_q8">Saya lebih mengkritik terhadap diri saya lebih dari biasanya</string>
+    <string name="answer2_q8">Saya mengkritik diri saya untuk semua kesalahan saya</string>
+    <string name="answer3_q8">Saya menyalahkn diri saya atas semua kejadian buruk yang terjadi</string>
+    <string name="page8">8/21</string>
+    <!-- 9 -->
+    <string name="quest9">Pikiran atau keinginan bunuh diri</string>
+    <string name="answer0_q9">Saya tidak mempunyai pikiran apapun untuk membunuh diri saya sendiri</string>
+    <string name="answer1_q9">Saya mempunyai pikiran untuk membunuh diri saya sendiri, tapi saya takut
+</string>
+    <string name="answer2_q9">Saya merasa ingin bunuh diri</string>
+    <string name="answer3_q9">Saya ingin bunuh diri bila ada kesempatan</string>
+    <string name="page9">9/21</string>
+    <!-- 10 -->
+    <string name="quest10">Menangis</string>
+    <string name="answer0_q10">Saya tidak menangis lagi seperti biasanya</string>
+    <string name="answer1_q10">Saya menangis lebih dari biasanya</string>
+    <string name="answer2_q10">Saya menangis pada masalah-masalah yang kecil</string>
+    <string name="answer3_q10">Saya sudah tak sanggup lagi untuk menangis</string>
+    <string name="page10">10/21</string>
+    <!-- 11 -->
+    <string name="quest11">Tidak bias istirahat</string>
+    <string name="answer0_q11">Saya bisa istirahat seperti biasanya</string>
+    <string name="answer1_q11">Saya merasa kurang bisa istirahat seperti biasanya</string>
+    <string name="answer2_q11">Saya tidak bisa istirahat atau sangat sulit umtuk diam</string>
+    <string name="answer3_q11">Saya sangat tidak bisa beristirahat atau saya harus bergerak atau melakukan sesuatu</string>
+    <string name="page11">11/21</string>
+    <!-- 12 -->
+    <string name="quest12">Kehilangan minat</string>
+    <string name="answer0_q12">Saya tidak kehilangan minat terhadap orang lain atau aktivitas tertentu</string>
+    <string name="answer1_q12">Saya sedikit berminat terhadap orang lain atau sesuatu hal daripada keadaan sebelumnya</string>
+    <string name="answer2_q12">Saya kehilangan hampir seluruh minat terhadap orang lain atau hal lain</string>
+    <string name="answer3_q12">Saya sulit untuk berminat terhadap apapun</string>
+    <string name="page12">12/21</string>
+    <!-- 13 -->
+    <string name="quest13">Keragu-raguan</string>
+    <string name="answer0_q13">Saya membuat keputusan daripada sebelumnya</string>
+    <string name="answer1_q13">Saya sedikit kesulitan dalam membuat keputusan daripada seperti biasanya</string>
+    <string name="answer2_q13">Saya lebih sulit dalam membuat keputusan daripada seperti biasanya</string>
+    <string name="answer3_q13">Saya kesulitan membuat keputusan apapun</string>
+    <string name="page13">13/21</string>
+    <!-- 14 -->
+    <string name="quest14">Ketidak-berartian</string>
+    <string name="answer0_q14">Saya menganggap diri saya berarti dan berguna seperti biasanya</string>
+    <string name="answer1_q14">Saya tidak menganggap diri saya berarti dan berguna seperti biasanya</string>
+    <string name="answer2_q14">Saya merasa sangat tidak berarti dibandingkan dengan orang lain</string>
+    <string name="answer3_q14">Saya merasa diri saya sama sekali tidak berarti</string>
+    <string name="page14">14/21</string>
+    <!-- 15 -->
+    <string name="quest15">Kehilangan energy</string>
+    <string name="answer0_q15">Saya mempunyai banyak energy seperti biasanya</string>
+    <string name="answer1_q15">Saya kekurangan banyak energy dibandingkan keadaan biasanya</string>
+    <string name="answer2_q15">Saya tidak mempunyai energy yang cukup untuk melakukan banyak hal</string>
+    <string name="answer3_q15">Saya tidak mempunyai cukup energy untuk melakukan apapun</string>
+    <string name="page15">15/21</string>
+    <!-- 16 -->
+    <string name="quest16">Perubahan pola dalam tidur</string>
+    <string name="answer0_q16">Saya tidak mengalami perubahan dalam pola tidur</string>
+    <string name="answer1_q16">Saya kadang-kadang tidur lebih dari biasanya</string>
+    <string name="answer2_q16">Saya bangun 1-2 jam lebih awal dari biasanya dan merasa sukar sekali untuk bisa tidur
+kembali</string>
+    <string name="answer3_q16">Saya bangun beberapa jam lebih awal dari pada biasanya serta tidak dapat tidur kembali</string>
+    <string name="page16">16/21</string>
+    <!-- 17 -->
+    <string name="quest17">Mudah tersinggung</string>
+    <string name="answer0_q17">Saya tidak mudah tersinggung seperti sebelumnya
+</string>
+    <string name="answer1_q17">Saya lebih mudah tersinggung daripada sebelumnya</string>
+    <string name="answer2_q17">Saya lebih sering tersinggung daripada biasanya</string>
+    <string name="answer3_q17">Saya tersinggung setiap waktu.</string>
+    <string name="page17">17/21</string>
+    <!-- 18 -->
+    <string name="quest18">Perubahan dalam selera makan</string>
+    <string name="answer0_q18">Nafsu makan saya tidak lebih buruk dari biasanya</string>
+    <string name="answer1_q18">Nafsu makan saya tidak sebaik biasanya</string>
+    <string name="answer2_q18">Nafsu makan saya kini jauh lebih buruk</string>
+    <string name="answer3_q18">Saya tak memiliki nafsu makan lagi</string>
+    <string name="page18">18/21</string>
+    <!-- 19 -->
+    <string name="quest19">Kesulitan berkonsentrasi</string>
+    <string name="answer0_q19">Saya dapat berkonsentrasi baik seperti biasanya</string>
+    <string name="answer1_q19">Saya tidak berkonsentrasi sebaik sebelumnya</string>
+    <string name="answer2_q19">Sangat sulit untuk berkonsentrasi untuk jangka lama</string>
+    <string name="answer3_q19">Saya tidak dapat berkonsentrasi pada apapun</string>
+    <string name="page19">19/21</string>
+    <!-- 20 -->
+    <string name="quest20">Capek atau lelah</string>
+    <string name="answer0_q20">Saya tidak merasa capek atau lelah dibandingkan keadaan sebelumnya</string>
+    <string name="answer1_q20">Saya merasa sangat lelah atau capek untuk melakukan apapun, daripada biasanya</string>
+    <string name="answer2_q20">Saya terlalu capek atau lelah untuk melakukan hamper semua aktivitas daripada yang
+biasanya</string>
+    <string name="answer3_q20">Saya terlalu capek atau lelah untuk melakukan hampir semua aktivitas daripada yang
+biasanya</string>
+    <string name="page20">20/21</string>
+    <!-- 21 -->
+    <string name="quest21">Kehilangan minat seks</string>
+    <string name="answer0_q21">Saya tidak punya perubahan dalam minat seksual</string>
+    <string name="answer1_q21">Saya sedikit kurang tertarik terhadap seks dibandingkan biasanya</string>
+    <string name="answer2_q21">Saya kurang tertarik dengan seks sekarang</string>
+    <string name="answer3_q21">Saya kehilangan minat seks sepenuhnya</string>
+    <string name="page21">21/21</string>
+
+
+</resources>

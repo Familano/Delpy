@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maming.delpy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginDokter" />
+        <activity android:name=".RegisterPasien" />
+        <activity android:name=".RegisterDokter" />
+        <activity android:name=".ActQuestion1" />
+        <activity android:name=".ActQuestion2" />
+        <activity android:name=".ActQuestion3" />
+        <activity android:name=".ActQuestion4" />
+        <activity android:name=".ActQuestion5" />
+        <activity android:name=".ActQuestion6" />
+        <activity android:name=".ActQuestion7" />
+        <activity android:name=".ActQuestion8" />
+        <activity android:name=".ActQuestion9" />
+        <activity android:name=".ActQuestion10" />
+        <activity android:name=".ActQuestion11" />
+        <activity android:name=".ActQuestion12" />
+        <activity android:name=".ActQuestion13" />
+        <activity android:name=".ActQuestion14" />
+        <activity android:name=".ActQuestion15" />
+        <activity android:name=".ActQuestion16" />
+        <activity android:name=".ActQuestion17" />
+        <activity android:name=".ActQuestion18" />
+        <activity android:name=".ActQuestion19" />
+        <activity android:name=".ActQuestion20" />
+        <activity android:name=".ActQuestion21"></activity>
+    </application>
+
+</manifest>
