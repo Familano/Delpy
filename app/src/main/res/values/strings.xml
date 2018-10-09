@@ -158,6 +158,10 @@ biasanya</string>
     <string name="answer2_q21">Saya kurang tertarik dengan seks sekarang</string>
     <string name="answer3_q21">Saya kehilangan minat seks sepenuhnya</string>
     <string name="page21">21/21</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>
