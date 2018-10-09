@@ -17,7 +17,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/ARPas_LogoDelpy"
+                android:id="@+id/ARPas_ImgLogoDelpy"
                 android:layout_width="168dp"
                 android:layout_height="114dp"
                 android:layout_gravity="end"
