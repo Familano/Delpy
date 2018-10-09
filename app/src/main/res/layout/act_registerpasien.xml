@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient">
-
-
-    <ScrollView
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,7 +16,7 @@
                 android:layout_width="168dp"
                 android:layout_height="114dp"
                 android:layout_gravity="end"
-                android:contentDescription="Delpy Logo"
+                android:contentDescription="@string/app_logo"
                 app:srcCompat="@drawable/icon" />
 
             <TextView
@@ -29,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="Daftar"
+                android:text="@string/btn_register"
                 android:textSize="35sp"
                 android:textStyle="bold" />
 
@@ -39,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="65dp"
                 android:layout_marginTop="20dp"
-                android:text="Pasien"
+                android:text="@string/txt_pasien"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
@@ -51,7 +46,7 @@
                 android:layout_marginTop="30dp"
                 android:width="300dp"
                 android:background="@drawable/switchpasien"
-                android:hint="Nama Lengkap"
+                android:hint="@string/txt_fullname"
                 android:inputType="text" />
 
             <EditText
@@ -64,7 +59,7 @@
                 android:height="60dp"
                 android:background="@drawable/switchpasien"
                 android:ems="10"
-                android:hint="Tanggal Lahir"
+                android:hint="@string/txt_birthdate"
                 android:inputType="date" />
 
             <EditText
@@ -74,7 +69,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/switchpasien"
-                android:hint="Email"
+                android:hint="@string/txt_email"
                 android:inputType="textEmailAddress" />
 
             <EditText
@@ -84,7 +79,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/switchpasien"
-                android:hint="Password"
+                android:hint="@string/txt_pw"
                 android:inputType="textPassword" />
 
             <Button
@@ -95,9 +90,6 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/switchpasien"
-                android:text="DAFTAR" />
+                android:text="@string/btn_register" />
         </LinearLayout>
     </ScrollView>
-
-
-</LinearLayout>

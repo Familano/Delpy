@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">Delpy</string>
 
+    <!-- Login & Register -->
+    <string name="app_logo">Delpy Logo</string>
+    <string name="btn_forgetpw">Lupa password?</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="txt_pasien">Pasien</string>
+    <string name="txt_dokter">Dokter</string>
+    <string name="txt_fullname">Nama Lengkap</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_pw">Password</string>
+    <string name="txt_npid">NPID</string>
+    <string name="txt_birthdate">Tanggal Lahir</string>
+
     <!-- Kuisioner -->
     <!-- 1 -->
     <string name="quest1">Kesedihan</string>
