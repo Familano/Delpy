@@ -7,92 +7,97 @@
     android:background="@drawable/gradient">
 
 
-    <ImageView
-        android:id="@+id/logoDelpy"
-        android:layout_width="168dp"
-        android:layout_height="114dp"
-        app:srcCompat="@drawable/icon"
-        android:layout_gravity="end"
-        android:contentDescription="TODO" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txtDaftar"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:text="Daftar"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txtPasien"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="20dp"
-            android:text="Pasien"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/ARPas_LogoDelpy"
+                android:layout_width="168dp"
+                android:layout_height="114dp"
+                android:layout_gravity="end"
+                android:contentDescription="Delpy Logo"
+                app:srcCompat="@drawable/icon" />
 
-        <EditText
-            android:id="@+id/txfFullName"
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:width="300dp"
-            android:background="@drawable/switchpasien"
-            android:hint="Nama Lengkap"
-            android:inputType="" />
+            <TextView
+                android:id="@+id/ARPas_TxtDaftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Daftar"
+                android:textSize="35sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/txfTglLahir"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:width="300dp"
-            android:height="60dp"
-            android:background="@drawable/switchpasien"
-            android:ems="10"
-            android:hint="Tanggal Lahir"
-            android:inputType="date" />
+            <TextView
+                android:id="@+id/ARPas_TxtPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="20dp"
+                android:text="Pasien"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/txfEmail"
-            android:layout_width="300dp"
-            android:layout_height="56dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/switchpasien"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+            <EditText
+                android:id="@+id/ARPas_TxfFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:width="300dp"
+                android:background="@drawable/switchpasien"
+                android:hint="Nama Lengkap"
+                android:inputType="text" />
 
-        <EditText
-            android:id="@+id/txfPassword"
-            android:layout_width="300dp"
-            android:layout_height="56dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/switchpasien"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/ARPas_TxfTglLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:width="300dp"
+                android:height="60dp"
+                android:background="@drawable/switchpasien"
+                android:ems="10"
+                android:hint="Tanggal Lahir"
+                android:inputType="date" />
 
-        <Button
-            android:id="@+id/btnDaftar"
-            android:layout_width="97dp"
-            android:layout_height="46dp"
-            android:layout_gravity="end"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/switchpasien"
-            android:text="DAFTAR" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/ARPas_TxfEmail"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/switchpasien"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/ARPas_TxfPassword"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/switchpasien"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/ARPas_BtnDaftar"
+                android:layout_width="97dp"
+                android:layout_height="46dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/switchpasien"
+                android:text="DAFTAR" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
