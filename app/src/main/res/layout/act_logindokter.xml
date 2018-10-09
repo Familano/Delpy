@@ -9,102 +9,102 @@
     tools:context="com.example.maming.delpy.ActLoginPasien">
 
     <ImageView
+        android:contentDescription="Delpy Logo"
         android:id="@+id/ALDok_ImgLogoDelpy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_above="@+id/ALDok_BtnDokter"
         android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
         android:textColor="#fff"
-        app:srcCompat="@drawable/icon"
-        android:contentDescription="Delpy Logo" />
+        app:srcCompat="@drawable/icon" />
 
     <Button
-        android:id="@+id/ALDok_BtnPasien"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/ALDok_TxfEmail"
-        android:layout_alignStart="@+id/ALDok_TxfEmail"
-        android:layout_marginBottom="11dp"
-        android:layout_marginStart="16dp"
         android:background="@drawable/switchdokter"
         android:gravity="center_horizontal"
+        android:id="@+id/ALDok_BtnPasien"
+        android:layout_above="@+id/ALDok_TxfEmail"
+        android:layout_alignStart="@+id/ALDok_TxfEmail"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
         android:text="Pasien"
         android:textColor="#fff" />
 
     <Button
-        android:id="@+id/ALDok_BtnDokter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/ALDok_BtnPasien"
-        android:layout_alignBottom="@+id/ALDok_BtnPasien"
-        android:layout_toEndOf="@+id/ALDok_BtnPasien"
         android:background="@drawable/switchdokter"
         android:gravity="center_horizontal"
+        android:id="@+id/ALDok_BtnDokter"
+        android:layout_alignBaseline="@+id/ALDok_BtnPasien"
+        android:layout_alignBottom="@+id/ALDok_BtnPasien"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ALDok_BtnPasien"
+        android:layout_width="wrap_content"
         android:text="Dokter"
         android:textColor="#fff" />
 
     <EditText
-        android:id="@+id/ALDok_TxfEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_action_emaildok"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/ALDok_TxfPassword"
         android:hint="Email"
+        android:id="@+id/ALDok_TxfEmail"
+        android:inputType="textEmailAddress"
+        android:layout_alignStart="@+id/ALDok_TxfPassword"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:textColor="#fff"
-        android:textColorHint="#fff"
-        android:drawableStart="@drawable/ic_action_emaildok" />
+        android:textColorHint="#fff" />
 
     <EditText
+        android:drawableStart="@drawable/ic_action_passdok"
+        android:ems="10"
+        android:hint="Password"
         android:id="@+id/ALDok_TxfPassword"
-        android:layout_width="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/ALDok_TxfEmail"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Password"
+        android:layout_width="wrap_content"
         android:textColor="#fff"
-        android:textColorHint="#fff"
-        android:drawableStart="@drawable/ic_action_passdok"
-        android:layout_below="@+id/ALDok_TxfEmail"
-        android:layout_centerHorizontal="true" />
+        android:textColorHint="#fff" />
 
     <Button
-        android:gravity="center_horizontal"
         android:background="@drawable/switchdokter"
+        android:gravity="center_horizontal"
         android:id="@+id/ALDok_BtnLogin"
-        android:layout_width="match_parent"
+        android:layout_below="@+id/ALDok_TxfPassword"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_marginStart="71dp"
-        android:text="Masuk"
         android:layout_marginTop="25dp"
-        android:textColor="#fff"
-        android:layout_below="@+id/ALDok_TxfPassword"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="match_parent"
+        android:text="Masuk"
+        android:textColor="#fff" />
 
     <TextView
         android:id="@+id/ALDok_TxtLupaPassword"
-        android:layout_width="wrap_content"
+        android:layout_below="@+id/ALDok_BtnLogin"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
         android:text="Lupa password?"
-        android:textColor="#fff"
-        android:layout_below="@+id/ALDok_BtnLogin"
-        android:layout_centerHorizontal="true" />
+        android:textColor="#fff" />
 
     <Button
-        android:gravity="center_horizontal"
         android:background="@drawable/switchdokter"
+        android:gravity="center_horizontal"
         android:id="@+id/ALDok_BtnDaftar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ALDok_TxtLupaPassword"
-        android:layout_marginTop="16dp"
-        android:text="Daftar"
-        android:layout_alignStart="@+id/ALDok_BtnLogin"
         android:layout_alignEnd="@+id/ALDok_BtnLogin"
+        android:layout_alignStart="@+id/ALDok_BtnLogin"
+        android:layout_below="@+id/ALDok_TxtLupaPassword"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:text="Daftar"
         android:textColor="#fff"/>
 
 
