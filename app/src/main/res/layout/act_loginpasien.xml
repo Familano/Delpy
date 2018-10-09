@@ -9,7 +9,7 @@
     tools:context="com.example.maming.delpy.ActLoginPasien">
 
     <ImageView
-        android:contentDescription="Delpy Logo"
+        android:contentDescription="@string/app_logo"
         android:id="@+id/ALPas_ImgLogoDelpy"
         android:layout_above="@+id/ALPas_BtnDokter"
         android:layout_alignParentStart="true"
@@ -29,7 +29,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginStart="22dp"
         android:layout_width="wrap_content"
-        android:text="Pasien" />
+        android:text="@string/txt_pasien" />
 
     <Button
         android:background="@drawable/switchpasien"
@@ -42,35 +42,31 @@
         android:layout_marginStart="-3dp"
         android:layout_toEndOf="@+id/ALPas_BtnPasien"
         android:layout_width="wrap_content"
-        android:text="Dokter" />
+        android:text="@string/txt_dokter" />
 
     <EditText
         android:drawableStart="@drawable/ic_action_email"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/txt_email"
         android:id="@+id/ALPas_TxfEmail"
         android:inputType="textEmailAddress"
         android:layout_alignStart="@+id/ALPas_TxfPassword"
         android:layout_centerVertical="true"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textColor="#fff"
-        android:textColorHint="#fff" />
+        android:layout_width="wrap_content" />
 
 
     <EditText
         android:drawableStart="@drawable/ic_action_pass"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/txt_pw"
         android:id="@+id/ALPas_TxfPassword"
         android:inputType="textPassword"
         android:layout_below="@+id/ALPas_TxfEmail"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
-        android:layout_width="wrap_content"
-        android:textColor="#fff"
-        android:textColorHint="#fff" />
+        android:layout_width="wrap_content" />
 
     <Button
         android:background="@drawable/switchpasien"
@@ -82,7 +78,7 @@
         android:layout_marginStart="71dp"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"
-        android:text="Masuk" />
+        android:text="@string/btn_login" />
 
     <TextView
         android:id="@+id/ALPas_TxtLupaPassword"
@@ -91,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
-        android:text="Lupa password?"
+        android:text="@string/btn_forgetpw"
         android:textColor="#000000" />
 
     <Button
@@ -104,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:text="Daftar" />
+        android:text="@string/btn_register" />
 
 
 </RelativeLayout>

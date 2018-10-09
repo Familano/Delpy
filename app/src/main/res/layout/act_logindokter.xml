@@ -9,7 +9,7 @@
     tools:context="com.example.maming.delpy.ActLoginPasien">
 
     <ImageView
-        android:contentDescription="Delpy Logo"
+        android:contentDescription="@string/app_logo"
         android:id="@+id/ALDok_ImgLogoDelpy"
         android:layout_above="@+id/ALDok_BtnDokter"
         android:layout_alignParentStart="true"
@@ -29,7 +29,7 @@
         android:layout_marginBottom="11dp"
         android:layout_marginStart="16dp"
         android:layout_width="wrap_content"
-        android:text="Pasien"
+        android:text="@string/txt_pasien"
         android:textColor="#fff" />
 
     <Button
@@ -41,13 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/ALDok_BtnPasien"
         android:layout_width="wrap_content"
-        android:text="Dokter"
+        android:text="@string/txt_dokter"
         android:textColor="#fff" />
 
     <EditText
         android:drawableStart="@drawable/ic_action_emaildok"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/txt_email"
         android:id="@+id/ALDok_TxfEmail"
         android:inputType="textEmailAddress"
         android:layout_alignStart="@+id/ALDok_TxfPassword"
@@ -60,7 +60,7 @@
     <EditText
         android:drawableStart="@drawable/ic_action_passdok"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/txt_pw"
         android:id="@+id/ALDok_TxfPassword"
         android:inputType="textPassword"
         android:layout_below="@+id/ALDok_TxfEmail"
@@ -81,7 +81,7 @@
         android:layout_marginStart="71dp"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"
-        android:text="Masuk"
+        android:text="@string/btn_login"
         android:textColor="#fff" />
 
     <TextView
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
-        android:text="Lupa password?"
+        android:text="@string/btn_forgetpw"
         android:textColor="#fff" />
 
     <Button
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:text="Daftar"
+        android:text="@string/btn_register"
         android:textColor="#fff"/>
 
 
