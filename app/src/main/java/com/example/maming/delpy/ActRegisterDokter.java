@@ -7,11 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class RegisterDokter extends AppCompatActivity {
+public class ActRegisterDokter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signupdok);
+        setContentView(R.layout.act_registerdokter);
         final TextView dokterLabel = (TextView) findViewById(R.id.txtDokter);
         final EditText fullName = (EditText) findViewById(R.id.txfFullName);
         final EditText NPID = (EditText) findViewById(R.id.txfNPID);

@@ -1,6 +1,5 @@
 package com.example.maming.delpy;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -8,11 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class RegisterPasien extends AppCompatActivity {
+public class ActRegisterPasien extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signuppas);
+        setContentView(R.layout.act_registerpasien);
         final TextView pasienLabel = (TextView) findViewById(R.id.txtPasien);
         final EditText fullName = (EditText) findViewById(R.id.txfFullName);
         final EditText tglLahir = (EditText) findViewById(R.id.txfTglLahir);

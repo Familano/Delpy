@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context="com.example.maming.delpy.MainActivity">
+    android:background="@drawable/gradiendok"
+    tools:context="com.example.maming.delpy.ActLoginPasien">
 
     <ImageView
         android:id="@+id/logoDelpy"
@@ -15,8 +15,8 @@
         android:layout_above="@+id/btnDokter"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="30dp"
-        app:srcCompat="@drawable/icon"
-        android:contentDescription="TODO" />
+        android:textColor="#fff"
+        app:srcCompat="@drawable/icon" />
 
     <Button
         android:id="@+id/btnPasien"
@@ -24,12 +24,13 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/txfEmail"
         android:layout_alignStart="@+id/txfEmail"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/switchpasien"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/switchdokter"
         android:gravity="center_horizontal"
-        android:text="Pasien" />
+        android:text="Pasien"
+        android:textColor="#fff" />
 
     <Button
         android:id="@+id/btnDokter"
@@ -37,12 +38,11 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btnPasien"
         android:layout_alignBottom="@+id/btnPasien"
-        android:layout_marginStart="-3dp"
-        android:layout_marginBottom="0dp"
         android:layout_toEndOf="@+id/btnPasien"
-        android:background="@drawable/switchpasien"
+        android:background="@drawable/switchdokter"
         android:gravity="center_horizontal"
-        android:text="Dokter" />
+        android:text="Dokter"
+        android:textColor="#fff" />
 
     <EditText
         android:id="@+id/txfEmail"
@@ -53,8 +53,8 @@
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/txfPassword"
         android:text="Email"
-        android:drawableStart="@drawable/ic_action_email" />
-
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/ic_action_emaildok" />
 
     <EditText
         android:id="@+id/txfPassword"
@@ -64,19 +64,21 @@
         android:ems="10"
         android:inputType="textPassword"
         android:text="Password"
-        android:drawableStart="@drawable/ic_action_pass"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/ic_action_passdok"
         android:layout_below="@+id/txfEmail"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:gravity="center_horizontal"
-        android:background="@drawable/switchpasien"
+        android:background="@drawable/switchdokter"
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
         android:text="Masuk"
         android:layout_marginTop="25dp"
+        android:textColor="#fff"
         android:layout_below="@+id/txfPassword"
         android:layout_centerHorizontal="true" />
 
@@ -86,13 +88,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Lupa password?"
-        android:textColor="#000000"
+        android:textColor="#fff"
         android:layout_below="@+id/btnLogin"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:gravity="center_horizontal"
-        android:background="@drawable/switchpasien"
+        android:background="@drawable/switchdokter"
         android:id="@+id/btnDaftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -100,7 +102,8 @@
         android:layout_marginTop="16dp"
         android:text="Daftar"
         android:layout_alignStart="@+id/btnLogin"
-        android:layout_alignEnd="@+id/btnLogin" />
+        android:layout_alignEnd="@+id/btnLogin"
+        android:textColor="#fff"/>
 
 
 </RelativeLayout>
