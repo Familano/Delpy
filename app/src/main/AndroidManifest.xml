@@ -7,17 +7,18 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/SplashTheme">
+        <activity android:name=".ActSplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginDokter" />
-        <activity android:name=".RegisterPasien" />
-        <activity android:name=".RegisterDokter" />
+        <activity android:name=".ActLoginPasien" />
+        <activity android:name=".ActLoginDokter" />
+        <activity android:name=".ActRegisterPasien" />
+        <activity android:name=".ActRegisterDokter" />
         <activity android:name=".ActQuestion1" />
         <activity android:name=".ActQuestion2" />
         <activity android:name=".ActQuestion3" />

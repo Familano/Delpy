@@ -7,17 +7,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class RegisterDokter extends AppCompatActivity {
+public class ActRegisterDokter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signupdok);
-        final TextView dokterLabel = (TextView) findViewById(R.id.txtDokter);
-        final EditText fullName = (EditText) findViewById(R.id.txfFullName);
-        final EditText NPID = (EditText) findViewById(R.id.txfNPID);
-        final EditText emailAddress = (EditText) findViewById(R.id.txfEmail);
-        final EditText passWord = (EditText)findViewById(R.id.txfPassword);
-        final Button daftarButton = (Button) findViewById(R.id.btnDaftar);
+        setContentView(R.layout.act_registerdokter);
+        final TextView dokterLabel = (TextView) findViewById(R.id.ARDok_TxtDokter);
+        final EditText fullName = (EditText) findViewById(R.id.ARDok_TxfFullName);
+        final EditText NPID = (EditText) findViewById(R.id.ARDok_TxfNPID);
+        final EditText emailAddress = (EditText) findViewById(R.id.ARDok_TxfEmail);
+        final EditText passWord = (EditText)findViewById(R.id.ARDok_TxfPassword);
+        final Button daftarButton = (Button) findViewById(R.id.ARDok_BtnDaftar);
         daftarButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 String fullname = String.valueOf(fullName.getText());

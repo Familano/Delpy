@@ -12,32 +12,36 @@ import android.widget.TextView;
  * Created by maming on 10/1/2018.
  */
 
-public class LoginDokter extends AppCompatActivity {
+public class ActLoginDokter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.logindokter);
-        final Button pasienButton = (Button) findViewById(R.id.btnPasien);
-        final Button dokterButton = (Button) findViewById(R.id.btnDokter);
-        final EditText emailLogin = (EditText) findViewById(R.id.txfEmail);
-        final EditText passLogin = (EditText)findViewById(R.id.txfPassword);
-        final Button loginButton = (Button) findViewById(R.id.btnLogin);
-        final TextView lupaPass = (TextView)findViewById(R.id.txtLupaPassword);
-        final Button daftarButton = (Button) findViewById(R.id.btnDaftar);
+        setContentView(R.layout.act_logindokter);
+        final Button pasienButton = (Button) findViewById(R.id.ALDok_BtnPasien);
+        final Button dokterButton = (Button) findViewById(R.id.ALDok_BtnDokter);
+        final EditText emailLogin = (EditText) findViewById(R.id.ALDok_TxfEmail);
+        final EditText passLogin = (EditText)findViewById(R.id.ALDok_TxfPassword);
+        final Button loginButton = (Button) findViewById(R.id.ALDok_BtnLogin);
+        final TextView lupaPass = (TextView)findViewById(R.id.ALDok_TxtLupaPassword);
+        final Button daftarButton = (Button) findViewById(R.id.ALDok_BtnDaftar);
 
-        // Ini untuk tombol pasien kalau di click
+        // Function for button Pasien when onClick
         pasienButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(LoginDokter.this, MainActivity.class);
+                Intent intent = new Intent(ActLoginDokter.this, ActLoginPasien.class);
                 startActivity(intent);
             }
         });
+
+        // Function for button Dokter when onClick
         dokterButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(LoginDokter.this, LoginDokter.class);
+                Intent intent = new Intent(ActLoginDokter.this, ActLoginDokter.class);
                 startActivity(intent);
             }
         });
+
+        // Function for button Login when onClick
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 String emaillogin = String.valueOf(emailLogin.getText());
@@ -45,9 +49,11 @@ public class LoginDokter extends AppCompatActivity {
                 lupaPass.setText("Email " + emaillogin + " Pass " + passlogin);
             }
         });
+
+        // Function for button Daftar when onClick
         daftarButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                setContentView(R.layout.signupdok);
+                setContentView(R.layout.act_registerdokter);
             }
         });
     }
