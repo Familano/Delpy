@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/AlPas_Toolbar"
@@ -13,79 +14,98 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:src="@drawable/menuhome_list"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/AlPas_TxtHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="80dp"
+        <TextView
+            android:id="@+id/AlPas_TxtHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/menuhome_notification"
+        tools:layout_editor_absoluteX="317dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/menuhome_treatment"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="117dp" />
+    </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/AlPas_TxtTreatment"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="Treatment"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="267dp" />
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/menuhome_diary"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="117dp" />
-
-    <TextView
-        android:id="@+id/AlPas_TxtDiary"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:height="30dp"
-        android:text="Diary"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="267dp" />
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/menuhome_statistik"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="320dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-    <TextView
-        android:id="@+id/AlPas_TxtStatistik"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Statistik"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="470dp" />
+                <TextView
+                    android:drawableTop="@drawable/menuhome_treatment"
+                    android:id="@+id/AlPas_TxtTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Treatment"
+                    android:textSize="20sp"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/menuhome_chat"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="320dp" />
+                <TextView
+                    android:id="@+id/AlPas_TxtDiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diary"
+                    android:textSize="20sp"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/menuhome_diary"/>
 
-    <TextView
-        android:id="@+id/AlPas_TxtChat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chat"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="470dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+                <TextView
+                    android:gravity="center"
+                    android:drawableTop="@drawable/menuhome_statistik"
+                    android:id="@+id/AlPas_TxtStatistik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Statistik"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:drawableTop="@drawable/menuhome_chat"
+                    android:id="@+id/AlPas_TxtChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginStart="50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout
+   >

@@ -14,6 +14,13 @@
     <string name="txt_npid">NPID</string>
     <string name="txt_birthdate">Tanggal Lahir</string>
 
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_profil">Profil</string>
+    <string name="menu_delpypedia">Delpypedia</string>
+    <string name="menu_setting">Pengaturan</string>
+    <string name="menu_info">Tentang Delpy</string>
+
     <!-- Kuisioner -->
     <!-- 1 -->
     <string name="quest1">Kesedihan</string>
