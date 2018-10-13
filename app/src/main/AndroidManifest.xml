@@ -19,6 +19,7 @@
         <activity android:name=".ActLoginDokter" />
         <activity android:name=".ActRegisterPasien" />
         <activity android:name=".ActRegisterDokter" />
+        <activity android:name=".ActHomePasien" />
         <activity android:name=".ActQuestion1" />
         <activity android:name=".ActQuestion2" />
         <activity android:name=".ActQuestion3" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -19,9 +19,10 @@
     <ImageView
         android:layout_width="70dp"
         android:layout_height="40dp"
-        android:src="@drawable/menuhome_list"
+        app:srcCompat="@drawable/menuhome_list"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/AlPas_TxtHome"
@@ -38,9 +39,10 @@
         android:layout_height="40dp"
         android:layout_gravity="end"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/menuhome_notification"
+        app:srcCompat="@drawable/menuhome_notification"
         tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="TODO" />
 
     </android.support.v7.widget.Toolbar>
 
@@ -55,7 +57,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
 
                 <TextView
                     android:drawableTop="@drawable/menuhome_treatment"

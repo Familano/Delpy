@@ -44,9 +44,13 @@ public class ActLoginDokter extends AppCompatActivity {
         // Function for button Login when onClick
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                /*
                 String emaillogin = String.valueOf(emailLogin.getText());
                 String passlogin = String.valueOf(passLogin.getText());
                 lupaPass.setText("Email " + emaillogin + " Pass " + passlogin);
+                */
+                Intent intent = new Intent(ActLoginDokter.this, ActHomePasien.class);
+                startActivity(intent);
             }
         });
 
