@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.HashMap;
+
 public class ActLoginPasien extends AppCompatActivity {
 
     @Override
@@ -41,11 +43,16 @@ public class ActLoginPasien extends AppCompatActivity {
         // Function for button Login when onClick
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-               /* String emaillogin = String.valueOf(emailLogin.getText());
+                String emaillogin = String.valueOf(emailLogin.getText());
                 String passlogin = String.valueOf(passLogin.getText());
-                lupaPass.setText("email " + emaillogin + " , password " + passlogin);*/
+                /* lupaPass.setText("email " + emaillogin + " , password " + passlogin);
                 Intent intent = new Intent(ActLoginPasien.this, ActQuestion1.class);
-                startActivity(intent);
+                startActivity(intent);*/
+                HashMap<String, String> params = new HashMap<>();
+                params.put("email", emaillogin);
+                params.put("password", passlogin);
+
+                ActSplashScreen.loginPasien(params);
             }
         });
 
