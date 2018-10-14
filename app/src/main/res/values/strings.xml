@@ -14,6 +14,13 @@
     <string name="txt_npid">NPID</string>
     <string name="txt_birthdate">Tanggal Lahir</string>
 
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_profil">Profil</string>
+    <string name="menu_delpypedia">Delpypedia</string>
+    <string name="menu_setting">Pengaturan</string>
+    <string name="menu_info">Tentang Delpy</string>
+
     <!-- Kuisioner -->
     <!-- 1 -->
     <string name="quest1">Kesedihan</string>
@@ -26,10 +33,8 @@
     <string name="quest2">Pesimistik</string>
     <string name="answer0_q2">Saya yakin dengan masa depan saya</string>
     <string name="answer1_q2">Saya merasa takut dengan masa depan saya daripada biasanya</string>
-    <string name="answer2_q2">Saya tidak berharap segalanya menjadi lebih baik untuk saya
-</string>
-    <string name="answer3_q2">Saya merasa putus asa dengan masa depan saya dan keadaan hanya menjadi semakin
-memburuk</string>
+    <string name="answer2_q2">Saya tidak berharap segalanya menjadi lebih baik untuk saya</string>
+    <string name="answer3_q2">Saya merasa putus asa dengan masa depan saya dan keadaan hanya menjadi semakin memburuk</string>
     <string name="page2">2/21</string>
     <!-- 3 -->
     <string name="quest3">Kegagalan masa lalu</string>
@@ -91,7 +96,7 @@ memburuk</string>
     <string name="answer3_q10">Saya sudah tak sanggup lagi untuk menangis</string>
     <string name="page10">10/21</string>
     <!-- 11 -->
-    <string name="quest11">Tidak bias istirahat</string>
+    <string name="quest11">Tidak bisa istirahat</string>
     <string name="answer0_q11">Saya bisa istirahat seperti biasanya</string>
     <string name="answer1_q11">Saya merasa kurang bisa istirahat seperti biasanya</string>
     <string name="answer2_q11">Saya tidak bisa istirahat atau sangat sulit umtuk diam</string>

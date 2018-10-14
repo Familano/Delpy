@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background_q10"
     tools:context=".ActQuestion10">
 
 
@@ -107,6 +107,7 @@
         android:adjustViewBounds="true"
         android:background="@drawable/prev"
         android:scaleType="fitXY"
+        android:onClick="PrevPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.381"
@@ -125,6 +126,7 @@
         android:adjustViewBounds="true"
         android:background="@drawable/next"
         android:scaleType="fitXY"
+        android:onClick="NextPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.618"

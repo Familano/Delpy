@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.maming.delpy">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -19,6 +22,7 @@
         <activity android:name=".ActLoginDokter" />
         <activity android:name=".ActRegisterPasien" />
         <activity android:name=".ActRegisterDokter" />
+        <activity android:name=".ActHomePasien" />
         <activity android:name=".ActQuestion1" />
         <activity android:name=".ActQuestion2" />
         <activity android:name=".ActQuestion3" />
