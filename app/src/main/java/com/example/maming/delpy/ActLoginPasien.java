@@ -52,7 +52,8 @@ public class ActLoginPasien extends AppCompatActivity {
                 params.put("email", emaillogin);
                 params.put("password", passlogin);
 
-                ActSplashScreen.loginPasien(params);
+                ActMainActivity main = new ActMainActivity();
+                main.loginPasien(params);
             }
         });
 
