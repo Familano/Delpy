@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Delpy.iml" filepath="$PROJECT_DIR$/Delpy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testhehe.iml" filepath="$PROJECT_DIR$/testhehe.iml" />
     </modules>
   </component>
 </project>
