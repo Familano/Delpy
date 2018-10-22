@@ -45,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onRadioButton"
             android:buttonTint="@color/white"
             android:text="@string/answer0_q1"
             android:textColor="@color/white" />
@@ -54,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onRadioButton"
             android:buttonTint="@color/white"
             android:text="@string/answer1_q1"
             android:textColor="@color/white" />
@@ -63,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onRadioButton"
             android:buttonTint="@color/white"
             android:text="@string/answer2_q1"
             android:textColor="@color/white" />
@@ -72,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onRadioButton"
             android:buttonTint="@color/white"
             android:text="@string/answer3_q1"
             android:textColor="@color/white" />
@@ -107,6 +111,7 @@
         android:adjustViewBounds="true"
         android:background="@drawable/next"
         android:scaleType="fitXY"
+        android:onClick="NextPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.618"
