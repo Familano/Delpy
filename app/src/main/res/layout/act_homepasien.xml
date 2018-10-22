@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/backgroundtheme">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/AlPas_Toolbar"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:theme="@style/AppTheme"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -22,13 +23,13 @@
         app:srcCompat="@drawable/menuhome_list"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/menu_list" />
 
         <TextView
             android:id="@+id/AlPas_TxtHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
+            android:text="@string/menu_home"
             android:textColor="#fff"
             android:textSize="30sp"
             tools:layout_editor_absoluteX="106dp"
@@ -42,7 +43,7 @@
         app:srcCompat="@drawable/menuhome_notification"
         tools:layout_editor_absoluteX="317dp"
         tools:layout_editor_absoluteY="0dp"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/menu_notification" />
 
     </android.support.v7.widget.Toolbar>
 
@@ -66,14 +67,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Treatment"
+                    android:text="@string/menu_treatment"
                     android:textSize="20sp"/>
 
                 <TextView
                     android:id="@+id/AlPas_TxtDiary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diary"
+                    android:text="@string/menu_diary"
                     android:textSize="20sp"
                     android:layout_marginStart="50dp"
                     android:gravity="center"
@@ -93,7 +94,7 @@
                     android:id="@+id/AlPas_TxtStatistik"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Statistik"
+                    android:text="@string/menu_statistik"
                     android:textSize="20sp"/>
 
                 <TextView
@@ -101,7 +102,7 @@
                     android:id="@+id/AlPas_TxtChat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chat"
+                    android:text="@string/menu_chat"
                     android:textSize="20sp"
                     android:gravity="center"
                     android:layout_marginStart="50dp"/>
@@ -110,5 +111,4 @@
     </LinearLayout>
 
 
-</LinearLayout
-   >
+</LinearLayout>
