@@ -32,7 +32,7 @@ public class ActSaveScore extends AsyncTask<String, String, String > {
         String user_id = (String) params[0];
         String pertanyaan_id = (String) params[1];
         String score = (String) params[2];
-        String link="http://192.168.1.71/Delpy/skor_kuisioner.php";
+        String link="http://192.168.1.7 /Delpy/skor_kuisioner.php";
         try {
             URL url = new URL(link);
 
