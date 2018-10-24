@@ -30,6 +30,10 @@
     <string name="menu_forum">Forum</string>
     <string name="menu_activity">Aktivitas</string>
 
+    <!-- Menu pasien -->
+    <string name="txt_panorama">Panorama(VR)</string>
+    <string name="txt_audio">Audio</string>
+
     <!-- Kuisioner -->
     <!-- 1 -->
     <string name="quest1">Kesedihan</string>
