@@ -2,5 +2,5 @@
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
 android:opacity="opaque">
-<item android:drawable="@color/splashBackground"/>
+<item android:drawable="@color/splashBackground" />
 </layer-list>
