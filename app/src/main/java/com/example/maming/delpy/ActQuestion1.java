@@ -4,33 +4,23 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RadioGroup;
 import android.widget.RadioButton;
-import android.widget.TextView;
 
 
 public class ActQuestion1 extends AppCompatActivity {
-    String score="0";
-    private RadioGroup radioGroup;
-    private TextView page;
-    private Button nextButton;
+    private String score="0";
+    private String id_pertanyaan="Q01";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_question1);
-
-        radioGroup = (RadioGroup) findViewById(R.id.AQuest1_RadioGroup);
-
-        page = (TextView)findViewById(R.id.AQuest1_TxtPage);
-        nextButton = (Button) findViewById(R.id.AQuest1_ButtonNext);
     }
 
     public void NextPage (View view){
         ActSaveScore actSaveScore = new ActSaveScore(this);
-        actSaveScore.execute("17","Q01",score);
-        //saveScore();
+        actSaveScore.execute("17",id_pertanyaan,score);
+
         Intent intent = new Intent(ActQuestion1.this, ActQuestion2.class);
         startActivity(intent);
     }

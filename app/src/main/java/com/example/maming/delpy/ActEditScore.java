@@ -16,9 +16,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class ActSaveScore extends AsyncTask<String, String, String > {
+public class ActEditScore extends AsyncTask<String, String, String > {
     Context context;
-    ActSaveScore(Context ctx){
+    ActEditScore(Context ctx){
         context=ctx;
     }
 
@@ -32,7 +32,7 @@ public class ActSaveScore extends AsyncTask<String, String, String > {
         String user_id = (String) params[0];
         String pertanyaan_id = (String) params[1];
         String score = (String) params[2];
-        String link="http://192.168.1.71/Delpy/skor_kuisioner.php";
+        String link="http://192.168.1.71/Delpy/edit_skor.php";
         try {
             URL url = new URL(link);
 
@@ -44,9 +44,7 @@ public class ActSaveScore extends AsyncTask<String, String, String > {
 
                 OutputStream outputStream =httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-                String data = URLEncoder.encode("pertanyaan_id", "UTF-8") + "=" + URLEncoder.encode(pertanyaan_id, "UTF-8");
-                data += "&" + URLEncoder.encode("user_id", "UTF-8") + "=" + URLEncoder.encode(user_id, "UTF-8");
-                data += "&" + URLEncoder.encode("test_score", "UTF-8") + "=" + URLEncoder.encode(score, "UTF-8");
+                String data = URLEncoder.encode("test_score", "UTF-8") + "=" + URLEncoder.encode(score, "UTF-8");
                 bufferedWriter.write(data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
