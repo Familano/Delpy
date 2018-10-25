@@ -54,6 +54,9 @@ public class ActLoginPasien extends AppCompatActivity {
 
                 ActMainActivity main = new ActMainActivity();
                 main.loginPasien(params);
+
+                Intent intent = new Intent(ActLoginPasien.this, ActHomePasien.class);
+                startActivity(intent);
             }
         });
 
