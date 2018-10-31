@@ -6,8 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/menulogindokawl"
-    tools:context="com.example.maming.delpy.ActLoginPasien">
+    tools:context="com.example.maming.delpy.ActLoginDokter">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     <ImageView
         android:contentDescription="@string/app_logo"
         android:id="@+id/ALDok_ImgLogoDelpy"
@@ -108,4 +119,5 @@
         android:textColor="#fff"/>
 
 
+    </ScrollView>
 </RelativeLayout>
