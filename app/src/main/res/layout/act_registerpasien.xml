@@ -97,4 +97,4 @@
                 android:text="@string/btn_register" />
         </LinearLayout>
 </ScrollView>
-    </RelativeLayout>
+</RelativeLayout>
