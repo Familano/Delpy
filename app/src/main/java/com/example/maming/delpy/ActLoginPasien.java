@@ -3,12 +3,18 @@ package com.example.maming.delpy;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.HashMap;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class ActLoginPasien extends AppCompatActivity {
 
@@ -45,15 +51,24 @@ public class ActLoginPasien extends AppCompatActivity {
             public void onClick(View v){
                 String emaillogin = String.valueOf(emailLogin.getText());
                 String passlogin = String.valueOf(passLogin.getText());
-                /* lupaPass.setText("email " + emaillogin + " , password " + passlogin);
-                Intent intent = new Intent(ActLoginPasien.this, ActQuestion1.class);
-                startActivity(intent);*/
-                HashMap<String, String> params = new HashMap<>();
-                params.put("email", emaillogin);
-                params.put("password", passlogin);
 
-                ActMainActivity main = new ActMainActivity();
-                main.loginPasien(params);
+                ApiPasienRequest pasienRequest = RetroServer.getClient().create(ApiPasienRequest.class);
+                final Call<ModelResponseLogin> userCall = pasienRequest.login(emaillogin,passlogin);
+                userCall.enqueue(new Callback<ModelResponseLogin>() {
+                    @Override
+                    public void onResponse(Call<ModelResponseLogin> call, Response<ModelResponseLogin> response) {
+                        Log.v("LoginData", "On Response");
+                        Intent intent = new Intent(ActLoginPasien.this, ActHomePasien.class);
+                        startActivity(intent);
+                    }
+                    @Override
+                    public void onFailure(Call<ModelResponseLogin> call, Throwable t) {
+                        Log.v("LoginData", "On Failure");
+                        Intent intent = new Intent(ActLoginPasien.this, ActRegisterPasien.class);
+                        startActivity(intent);
+                    }
+                });
+
             }
         });
 

@@ -22,8 +22,6 @@ public class ActQuestion7 extends AppCompatActivity {
     }
 
     public void NextPage (View view){
-        ActSaveScore actSaveScore = new ActSaveScore(this);
-        actSaveScore.execute("17",id_pertanyaan,score);
 
         Intent intent = new Intent(ActQuestion7.this, ActQuestion8.class);
         startActivity(intent);

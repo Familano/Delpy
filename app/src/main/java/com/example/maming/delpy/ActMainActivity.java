@@ -75,4 +75,9 @@ public class ActMainActivity extends AppCompatActivity {
         PerformNetworkRequest request = new PerformNetworkRequest(APIPasien.URL_LOGIN_PASIEN, params, CODE_POST_REQUEST);
         request.execute();
     }
+    /* Function needed for Save Score */
+    public void saveScore(HashMap<String, String> params){
+        PerformNetworkRequest request = new PerformNetworkRequest(APITest.URL_S_SCORE, params, CODE_POST_REQUEST);
+        request.execute();
+    }
 }

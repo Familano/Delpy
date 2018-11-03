@@ -1,57 +1,95 @@
 package com.example.maming.delpy;
 
-public class ObjectPasien {
-    private String id;
-    private String nama;
-    private String alamat;
-    private String tgl_lahir;
-    private String umur;
-    private String gender;
-    private String email;
-    private String password;
-    private String role;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-    public ObjectPasien(String id, String nama, String alamat, String tgl_lahir, String umur, String gender, String email, String password, String role) {
-        this.id = id;
-        this.nama = nama;
-        this.alamat = alamat;
-        this.tgl_lahir = tgl_lahir;
-        this.umur = umur;
-        this.gender = gender;
-        this.email = email;
-        this.password = password;
-        this.role = role;
-    }
+public class ObjectPasien {
+    @SerializedName("id")
+    @Expose
+    private String id;
+    @SerializedName("nama")
+    @Expose
+    private String nama;
+    @SerializedName("alamat")
+    @Expose
+    private Object alamat;
+    @SerializedName("tgl_lahir")
+    @Expose
+    private String tglLahir;
+    @SerializedName("umur")
+    @Expose
+    private Object umur;
+    @SerializedName("gender")
+    @Expose
+    private Object gender;
+    @SerializedName("email")
+    @Expose
+    private String email;
+    @SerializedName("role")
+    @Expose
+    private String role;
 
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNama() {
         return nama;
     }
 
-    public String getAlamat() {
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public Object getAlamat() {
         return alamat;
     }
 
-    public String getTgl_lahir() {
-        return tgl_lahir;
+    public void setAlamat(Object alamat) {
+        this.alamat = alamat;
     }
 
-    public String getUmur() {
+    public String getTglLahir() {
+        return tglLahir;
+    }
+
+    public void setTglLahir(String tglLahir) {
+        this.tglLahir = tglLahir;
+    }
+
+    public Object getUmur() {
         return umur;
     }
 
-    public String getGender() {
+    public void setUmur(Object umur) {
+        this.umur = umur;
+    }
+
+    public Object getGender() {
         return gender;
+    }
+
+    public void setGender(Object gender) {
+        this.gender = gender;
     }
 
     public String getEmail() {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getRole() {
         return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

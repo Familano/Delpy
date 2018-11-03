@@ -1,11 +1,18 @@
 package com.example.maming.delpy;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.RadioButton;
+import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
 
 
 public class ActQuestion6 extends AppCompatActivity {
@@ -22,8 +29,9 @@ public class ActQuestion6 extends AppCompatActivity {
     }
 
     public void NextPage (View view){
-        ActSaveScore actSaveScore = new ActSaveScore(this);
-        actSaveScore.execute("17",id_pertanyaan,score);
+        ActTempScore.score.put(id_pertanyaan,score);
+
+        ActTempScore.saveScore();
 
         Intent intent = new Intent(ActQuestion6.this, ActQuestion7.class);
         startActivity(intent);
