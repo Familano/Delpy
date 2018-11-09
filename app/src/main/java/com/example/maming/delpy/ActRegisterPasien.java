@@ -7,6 +7,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.text.FieldPosition;
+import java.text.ParsePosition;
+import java.util.Date;
+import java.util.HashMap;
+
 public class ActRegisterPasien extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +28,19 @@ public class ActRegisterPasien extends AppCompatActivity {
             public void onClick(View v){
                 String fullname = String.valueOf(fullName.getText());
                 String tgllahir = String.valueOf(tglLahir.getText());
+                String.format(tgllahir, new DateFormat());
                 String emailaddress = String.valueOf(emailAddress.getText());
                 String password = String.valueOf(passWord.getText());
-                pasienLabel.setText("fullName " + fullname +"tglLahir " + tgllahir +"Email " + emailaddress + " Pass " + password);
+                // pasienLabel.setText("fullName " + fullname +"tglLahir " + tgllahir +"Email " + emailaddress + " Pass " + password);
+                HashMap<String, String> params = new HashMap<>();
+                params.put("nama", fullname);
+                params.put("tgl_lahir", tgllahir);
+                params.put("email", emailaddress);
+                params.put("password", password);
+
+                RequestHandler request = new RequestHandler();
+                String result = request.sendPostRequest(APIPasien.URL_REGISTER_PASIEN, params);
+                pasienLabel.setText(params.toString());
             }
         });
     }

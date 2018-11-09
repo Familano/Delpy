@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.HashMap;
+
 public class ActRegisterDokter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +26,12 @@ public class ActRegisterDokter extends AppCompatActivity {
                 String npid = String.valueOf(NPID.getText());
                 String emailaddress = String.valueOf(emailAddress.getText());
                 String password = String.valueOf(passWord.getText());
-                dokterLabel.setText("fullName " + fullname +"tglLahir " + npid +"Email " + emailaddress + " Pass " + password);
+                // dokterLabel.setText("fullName " + fullname +"tglLahir " + npid +"Email " + emailaddress + " Pass " + password);
+                HashMap<String, String> params = new HashMap<>();
+                params.put("nama", fullname);
+                params.put("npid", npid);
+                params.put("email", emailaddress);
+                params.put("password", password);
             }
         });
     }
