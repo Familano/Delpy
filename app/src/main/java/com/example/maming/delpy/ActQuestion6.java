@@ -31,8 +31,6 @@ public class ActQuestion6 extends AppCompatActivity {
     public void NextPage (View view){
         ActTempScore.score.put(id_pertanyaan,score);
 
-        ActTempScore.saveScore();
-
         Intent intent = new Intent(ActQuestion6.this, ActQuestion7.class);
         startActivity(intent);
     }

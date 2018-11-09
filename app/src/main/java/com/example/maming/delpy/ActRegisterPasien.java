@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -39,13 +40,25 @@ public class ActRegisterPasien extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<ModelResponseRegister> call, Response<ModelResponseRegister> response) {
                         Log.v("RegisterData", "On Response");
-                        Intent intent = new Intent(ActRegisterPasien.this, ActQuestion1.class);
-                        startActivity(intent);
+                        if (response.code()==200){
+                            ModelResponseRegister responseRegister = response.body();
+                            if (responseRegister.getError()){
+                                // event ketika gagal
+                                Toast.makeText(ActRegisterPasien.this, "Gagal Registrasi : " + responseRegister.getMessage(), Toast.LENGTH_SHORT).show();
+                            }else{
+                                // event ketika berhasil
+                                Intent intent = new Intent(ActRegisterPasien.this, ActQuestion1.class);
+                                startActivity(intent);
+                            }
+                        }else{
+                            Toast.makeText(ActRegisterPasien.this, "Gagal Registrasi : " + response.message(), Toast.LENGTH_SHORT).show();
+                        }
                     }
 
                     @Override
                     public void onFailure(Call<ModelResponseRegister> call, Throwable t) {
-                        Log.v("RegisterData", "On Failure");
+                        Log.v("LoginData", "On Failure");
+                        Toast.makeText(ActRegisterPasien.this, "Gagal menghubungkan ke server", Toast.LENGTH_SHORT).show();
                     }
                 });
                 //END
