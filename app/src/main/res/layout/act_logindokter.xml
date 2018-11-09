@@ -1,111 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@drawable/menulogindokawl"
-    tools:context="com.example.maming.delpy.ActLoginPasien">
+    tools:context="com.example.maming.delpy.ActLoginDokter">
 
-    <ImageView
-        android:contentDescription="@string/app_logo"
-        android:id="@+id/ALDok_ImgLogoDelpy"
-        android:layout_above="@+id/ALDok_BtnDokter"
-        android:layout_alignParentStart="true"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:textColor="#fff"
-        app:srcCompat="@drawable/icon" />
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <Button
-        android:background="@drawable/switchdokter"
-        android:gravity="center_horizontal"
-        android:id="@+id/ALDok_BtnPasien"
-        android:layout_above="@+id/ALDok_TxfEmail"
-        android:layout_alignStart="@+id/ALDok_TxfEmail"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:layout_marginStart="16dp"
-        android:layout_width="wrap_content"
-        android:text="@string/txt_pasien"
-        android:textColor="#fff" />
+        <ImageView
+            android:contentDescription="@string/app_logo"
+            android:id="@+id/ALDok_ImgLogoDelpy"
+            android:layout_above="@+id/ALDok_BtnDokter"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            app:srcCompat="@drawable/icon" />
 
-    <Button
-        android:background="@drawable/switchdokter"
-        android:gravity="center_horizontal"
-        android:id="@+id/ALDok_BtnDokter"
-        android:layout_alignBaseline="@+id/ALDok_BtnPasien"
-        android:layout_alignBottom="@+id/ALDok_BtnPasien"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/ALDok_BtnPasien"
-        android:layout_width="wrap_content"
-        android:text="@string/txt_dokter"
-        android:textColor="#fff" />
+        <Button
+            android:background="@drawable/switchdokter"
+            android:gravity="center_horizontal"
+            android:id="@+id/ALDok_BtnPasien"
+            android:layout_above="@+id/ALDok_TxfEmail"
+            android:layout_alignStart="@+id/ALDok_TxfEmail"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:text="@string/txt_pasien"
+            android:textColor="#fff" />
 
-    <EditText
-        android:drawableStart="@drawable/ic_action_emaildok"
-        android:ems="10"
-        android:hint="@string/txt_email"
-        android:id="@+id/ALDok_TxfEmail"
-        android:inputType="textEmailAddress"
-        android:layout_alignStart="@+id/ALDok_TxfPassword"
-        android:layout_centerVertical="true"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textColor="#fff"
-        android:textColorHint="#fff" />
+        <Button
+            android:background="@drawable/switchdokter"
+            android:gravity="center_horizontal"
+            android:id="@+id/ALDok_BtnDokter"
+            android:layout_alignBaseline="@+id/ALDok_BtnPasien"
+            android:layout_alignBottom="@+id/ALDok_BtnPasien"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ALDok_BtnPasien"
+            android:layout_width="wrap_content"
+            android:text="@string/txt_dokter"
+            android:textColor="#fff" />
 
-    <EditText
-        android:drawableStart="@drawable/ic_action_passdok"
-        android:ems="10"
-        android:hint="@string/txt_pw"
-        android:id="@+id/ALDok_TxfPassword"
-        android:inputType="textPassword"
-        android:layout_below="@+id/ALDok_TxfEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_width="wrap_content"
-        android:textColor="#fff"
-        android:textColorHint="#fff" />
+        <EditText
+            android:drawableStart="@drawable/ic_action_emaildok"
+            android:ems="10"
+            android:hint="@string/txt_email"
+            android:id="@+id/ALDok_TxfEmail"
+            android:inputType="textEmailAddress"
+            android:layout_alignStart="@+id/ALDok_TxfPassword"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
 
-    <Button
-        android:background="@drawable/switchdokter"
-        android:gravity="center_horizontal"
-        android:id="@+id/ALDok_BtnLogin"
-        android:layout_below="@+id/ALDok_TxfPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="25dp"
-        android:layout_width="match_parent"
-        android:text="@string/btn_login"
-        android:textColor="#fff" />
+        <EditText
+            android:drawableStart="@drawable/ic_action_passdok"
+            android:ems="10"
+            android:hint="@string/txt_pw"
+            android:id="@+id/ALDok_TxfPassword"
+            android:inputType="textPassword"
+            android:layout_below="@+id/ALDok_TxfEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
 
-    <TextView
-        android:id="@+id/ALDok_TxtLupaPassword"
-        android:layout_below="@+id/ALDok_BtnLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_width="wrap_content"
-        android:text="@string/btn_forgetpw"
-        android:textColor="#fff" />
+        <Button
+            android:background="@drawable/switchdokter"
+            android:gravity="center_horizontal"
+            android:id="@+id/ALDok_BtnLogin"
+            android:layout_below="@+id/ALDok_TxfPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:text="@string/btn_login"
+            android:textColor="#fff" />
 
-    <Button
-        android:background="@drawable/switchdokter"
-        android:gravity="center_horizontal"
-        android:id="@+id/ALDok_BtnDaftar"
-        android:layout_alignEnd="@+id/ALDok_BtnLogin"
-        android:layout_alignStart="@+id/ALDok_BtnLogin"
-        android:layout_below="@+id/ALDok_TxtLupaPassword"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:text="@string/btn_register"
-        android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/ALDok_TxtLupaPassword"
+            android:layout_below="@+id/ALDok_BtnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:text="@string/btn_forgetpw"
+            android:textColor="#fff" />
 
+        <Button
+            android:background="@drawable/switchdokter"
+            android:gravity="center_horizontal"
+            android:id="@+id/ALDok_BtnDaftar"
+            android:layout_alignEnd="@+id/ALDok_BtnLogin"
+            android:layout_alignStart="@+id/ALDok_BtnLogin"
+            android:layout_below="@+id/ALDok_TxtLupaPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:text="@string/btn_register"
+            android:textColor="#fff"/>
 
-</RelativeLayout>
+        </RelativeLayout>
+</ScrollView>

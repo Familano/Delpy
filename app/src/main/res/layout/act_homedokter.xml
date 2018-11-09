@@ -1,114 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/menuhome_background">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/AlDok_Toolbar"
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorToolbardok"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/AppTheme"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/menuhome_list"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:contentDescription="@string/menu_list" />
-
-        <TextView
-            android:id="@+id/AlDok_TxtHome"
-            android:layout_width="wrap_content"
+        <!-- everything you already have -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/AlDok_Toolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/menu_home"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="106dp"
-            tools:layout_editor_absoluteY="0dp" />
+            android:background="@color/colorToolbardok"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_gravity="end"
-            android:layout_marginEnd="20dp"
-            app:srcCompat="@drawable/menuhome_notification"
-            tools:layout_editor_absoluteX="317dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:contentDescription="@string/menu_notification" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/menuhome_list"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:contentDescription="@string/menu_list" />
 
-    </android.support.v7.widget.Toolbar>
+            <TextView
+                android:id="@+id/AlPas_TxtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_home"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="106dp"
+                tools:layout_editor_absoluteY="0dp" />
 
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/menuhome_notification"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:contentDescription="@string/menu_notification" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
+        </android.support.v7.widget.Toolbar>
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/AlDok_TxtListPasien"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/menuhomedok_listpasien"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="@string/menu_listpasien"
-                android:textSize="20sp" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/AlDok_TxtForum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:drawableTop="@drawable/menuhomedok_forum"
+                <TextView
+                    android:id="@+id/AlPas_TxtTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/menuhomedok_treatment"
+                    android:gravity="center"
+                    android:text="@string/menu_treatment"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/AlPas_TxtDiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:drawableTop="@drawable/menuhomedok_chat"
+                    android:gravity="center"
+                    android:text="@string/menu_chat"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/menu_forum"
-                android:textSize="20sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/AlPas_TxtStatistik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/menuhomedok_listpasien"
+                    android:gravity="center"
+                    android:text="@string/menu_listpasien"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/AlPas_TxtChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:drawableTop="@drawable/menuhomedok_forum"
+                    android:gravity="center"
+                    android:text="@string/menu_forum"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/AlDok_TxtTreatment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/menuhomedok_treatment"
-                android:gravity="center"
-                android:text="@string/menu_treatment"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/AlDok_TxtChat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:drawableTop="@drawable/menuhomedok_chat"
-                android:gravity="center"
-                android:text="@string/menu_chat"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-</LinearLayout>
+    </TableLayout>
+</ScrollView>
