@@ -68,7 +68,7 @@
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/AQuest1_RadioButtonAns3"
+            android:id="@+id/AQuest5_RadioButtonAns3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -107,6 +107,7 @@
         android:adjustViewBounds="true"
         android:background="@drawable/prev"
         android:scaleType="fitXY"
+        android:onClick="PrevPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.381"
@@ -125,6 +126,7 @@
         android:adjustViewBounds="true"
         android:background="@drawable/next"
         android:scaleType="fitXY"
+        android:onClick="NextPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.618"

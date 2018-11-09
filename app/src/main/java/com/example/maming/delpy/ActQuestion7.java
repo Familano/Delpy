@@ -4,32 +4,54 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.RadioGroup;
+import android.widget.RadioButton;
+
 
 public class ActQuestion7 extends AppCompatActivity {
+    private String score="0";
+    private String id_pertanyaan="Q07";
+    private RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_question7);
 
-        final TextView page = (TextView)findViewById(R.id.AQuest7_TxtPage);
-        final Button nextButton = (Button) findViewById(R.id.AQuest7_ButtonNext);
-        final Button prevButton = (Button) findViewById(R.id.AQuest7_ButtonPrev);
-        //untuk menuju pertanyaan berikutnya(8)
-        nextButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(ActQuestion7.this, ActQuestion8.class);
-                startActivity(intent);
-            }
-        });
-        //untuk menuju pertanyaan sebelumnya(6)
-        prevButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(ActQuestion7.this, ActQuestion6.class);
-                startActivity(intent);
-            }
-        });
+        radioGroup = (RadioGroup) findViewById(R.id.AQuest6_RadioGroup);
+    }
+
+    public void NextPage (View view){
+
+        Intent intent = new Intent(ActQuestion7.this, ActQuestion8.class);
+        startActivity(intent);
+    }
+    public void PrevPage (View view){
+        radioGroup.check(0);
+
+        Intent intent = new Intent(ActQuestion7.this, ActQuestion6.class);
+        startActivity(intent);
+    }
+
+    public void onRadioButton(View view) {
+        Boolean checked = ((RadioButton) view).isChecked();
+        switch (view.getId()) {
+            case R.id.AQuest7_RadioButtonAns0:
+                if (checked)
+                    score="0";
+                break;
+            case R.id.AQuest7_RadioButtonAns1:
+                if (checked)
+                    score="1";
+                break;
+            case R.id.AQuest7_RadioButtonAns2:
+                if (checked)
+                    score="2";
+                break;
+            case R.id.AQuest7_RadioButtonAns3:
+                if (checked)
+                    score="3";
+                break;
+        }
     }
 }

@@ -4,32 +4,56 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.RadioGroup;
+import android.widget.RadioButton;
+
 
 public class ActQuestion17 extends AppCompatActivity {
+    private String score="0";
+    private String id_pertanyaan="Q17";
+    private RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_question17);
 
-        final TextView page = (TextView)findViewById(R.id.AQuest17_TxtPage);
-        final Button nextButton = (Button) findViewById(R.id.AQuest17_ButtonNext);
-        final Button prevButton = (Button) findViewById(R.id.AQuest17_ButtonPrev);
-        //untuk menuju pertanyaan berikutnya(18)
-        nextButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(ActQuestion17.this, ActQuestion18.class);
-                startActivity(intent);
-            }
-        });
-        //untuk menuju pertanyaan sebelumnya(16)
-        prevButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(ActQuestion17.this, ActQuestion16.class);
-                startActivity(intent);
-            }
-        });
+        radioGroup = (RadioGroup) findViewById(R.id.AQuest16_RadioGroup);
+    }
+
+    public void NextPage (View view){
+        ActSaveScore actSaveScore = new ActSaveScore(this);
+        actSaveScore.execute("17",id_pertanyaan,score);
+
+        Intent intent = new Intent(ActQuestion17.this, ActQuestion18.class);
+        startActivity(intent);
+    }
+    public void PrevPage (View view){
+        radioGroup.check(0);
+
+        Intent intent = new Intent(ActQuestion17.this, ActQuestion16.class);
+        startActivity(intent);
+    }
+
+    public void onRadioButton(View view) {
+        Boolean checked = ((RadioButton) view).isChecked();
+        switch (view.getId()) {
+            case R.id.AQuest17_RadioButtonAns0:
+                if (checked)
+                    score="0";
+                break;
+            case R.id.AQuest17_RadioButtonAns1:
+                if (checked)
+                    score="1";
+                break;
+            case R.id.AQuest17_RadioButtonAns2:
+                if (checked)
+                    score="2";
+                break;
+            case R.id.AQuest17_RadioButtonAns3:
+                if (checked)
+                    score="3";
+                break;
+        }
     }
 }

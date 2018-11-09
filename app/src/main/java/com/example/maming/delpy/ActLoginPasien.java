@@ -3,10 +3,18 @@ package com.example.maming.delpy;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.HashMap;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class ActLoginPasien extends AppCompatActivity {
 
@@ -41,11 +49,38 @@ public class ActLoginPasien extends AppCompatActivity {
         // Function for button Login when onClick
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-               /* String emaillogin = String.valueOf(emailLogin.getText());
+                String emaillogin = String.valueOf(emailLogin.getText());
                 String passlogin = String.valueOf(passLogin.getText());
-                lupaPass.setText("email " + emaillogin + " , password " + passlogin);*/
-                Intent intent = new Intent(ActLoginPasien.this, ActQuestion1.class);
-                startActivity(intent);
+
+                ApiPasienRequest pasienRequest = RetroServer.getClient().create(ApiPasienRequest.class);
+                final Call<ModelResponseLogin> userCall = pasienRequest.login(emaillogin,passlogin);
+                userCall.enqueue(new Callback<ModelResponseLogin>() {
+                    @Override
+                    public void onResponse(Call<ModelResponseLogin> call, Response<ModelResponseLogin> response) {
+                        Log.v("LoginData", "On Response");
+                        if (response.code()==200){
+                            ModelResponseLogin modelResponseLogin = response.body();
+                            if (modelResponseLogin.getError()){
+                                // event ketika gagal
+                                Toast.makeText(ActLoginPasien.this, "Gagal Login : " + modelResponseLogin.getMessage(), Toast.LENGTH_SHORT).show();
+                            }else{
+                                // event ketika berhasil
+                                Intent intent = new Intent(ActLoginPasien.this, ActHomePasien.class);
+                                startActivity(intent);
+                            }
+                        }else{
+                            Toast.makeText(ActLoginPasien.this, "Gagal Login : " + response.message(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    @Override
+                    public void onFailure(Call<ModelResponseLogin> call, Throwable t) {
+                        Log.v("LoginData", "On Failure");
+                        Toast.makeText(ActLoginPasien.this, "Gagal menghubungkan ke server", Toast.LENGTH_SHORT).show();
+//                        Intent intent = new Intent(ActLoginPasien.this, ActRegisterPasien.class);
+//                        startActivity(intent);
+                    }
+                });
+
             }
         });
 
