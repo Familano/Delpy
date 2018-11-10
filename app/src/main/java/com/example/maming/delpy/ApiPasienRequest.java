@@ -7,14 +7,14 @@ import retrofit2.http.POST;
 
 public interface ApiPasienRequest {
     @FormUrlEncoded
-    @POST("pasien.php?callapi=login")
+    @POST(APIPasien.URL_LOGIN_PASIEN)
     Call<ModelResponseLogin> login(
             @Field("email") String email,
             @Field("password") String password
     );
 
     @FormUrlEncoded
-    @POST("pasien.php?callapi=register")
+    @POST(APIPasien.URL_REGISTER_PASIEN)
     Call<ModelResponseRegister> register(
             @Field("nama") String nama,
             @Field("tgl_lahir") String tgl_lahir,
